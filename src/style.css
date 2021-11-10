@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700&display=swap");
+*,
+*::before,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #232425;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  font-weight: 400;
+  background-color: #fff;
+  font-family: "Mulish", sans-serif;
+}
+input {
+  padding: 0.55em 1em;
+  border-radius: 0.25rem;
+  outline: 0;
+  border: 1px solid #000;
+  background-color: #fff;
+  color: #000;
+  font-size: 1rem;
+}
+
+button {
+  padding: 0.65em 1em;
+  font-size: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem !important;
+  cursor: pointer;
+  transition: all linear 0.5s;
+}
+
+.btn-white {
+  background-color: transparent;
+  padding: 0.85em 1.5em;
+  color: #ffff;
+  border: 2px solid;
+}
+.btn-white:hover,
+.btn-white:focus {
+  background-image: linear-gradient(
+    to right,
+    #f5499e 4%,
+    #f5499e 0%,
+    #f5783e 100%
+  );
+  color: #fff;
+  border: 2px solid transparent;
+}
+nav {
+  background: #17192b;
+  color: #ffffff99;
+  max-width: 100%;
+  height: 100px;
+}
+.nav-img {
+  filter: invert(1);
+}
+.nav-list {
+  width: 60%;
+  margin-top: 1em;
+  font-size: 1.2rem;
+}
+li{
+  transition: all 0.3s linear;
+}
+li:hover,
+li:focus {
+  border-bottom: 3px solid #fff;
+  padding-bottom: 1em;
+  padding-top: 1em;
+  color: #fff;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+@media screen and (max-width:900px){
+  nav{
+    display: none !important;
+  }
+  .nav-list{
+    display: none !important;
+  }
+}
